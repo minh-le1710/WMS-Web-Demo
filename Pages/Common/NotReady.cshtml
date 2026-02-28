@@ -1,0 +1,18 @@
+﻿@page
+@model Wms.Web.Pages.Common.NotReadyModel
+@{
+    ViewData["Title"] = "Chưa sẵn sàng";
+}
+
+<div class="text-center" style="padding:28px 10px;">
+    <img src="https://pub-9326b54129674317b276bfb733df202e.r2.dev/202111b_1-1024x1024.jpg"
+         alt="Not connect to Cloud"
+         style="max-width:360px;width:100%;height:auto; rgba(0,0,0,.06);" />
+
+    <h4 class="mt-3 mb-1" style="font-weight:600;">Not connect to Cloud</h4>
+    <div class="text-muted">Vui lòng kết nối Cloud</div>
+
+    <div class="mt-3">
+        <a class="btn btn-outline-secondary btn-sm" asp-page="/Index">Quay về trang chủ</a>
+    </div>
+</div>
