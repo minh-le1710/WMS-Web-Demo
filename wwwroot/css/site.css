@@ -1,0 +1,680 @@
+:root {
+    --font-sans: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+html, body {
+    font-family: var(--font-sans);
+}
+
+button, input, select, textarea, table {
+    font-family: var(--font-sans);
+}
+
+.kpi {
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 14px;
+    background: #fff;
+}
+
+.kpi-title {
+    font-size: 12px;
+    color: #6b7280;
+    font-weight: 700;
+}
+
+.kpi-value {
+    font-size: 28px;
+    font-weight: 900;
+    color: #111827;
+    margin: 6px 0;
+}
+
+.kpi-sub {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.cardx {
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 14px;
+    background: #fff;
+}
+
+.cardx-header {
+    margin-top: 10px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+.topbar {
+    height: 56px;
+    background: #fff;
+}
+
+.brand {
+    text-decoration: none;
+    color: #111827;
+    font-weight: 700;
+}
+
+.brand-badge {
+    background: #2563eb;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.brand-text {
+    font-size: 14px;
+}
+
+.toplink {
+    text-decoration: none;
+    color: #374151;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+    .toplink:hover {
+        background: #f3f4f6;
+    }
+
+.topsearch {
+    width: 260px;
+}
+
+.shell {
+    display: flex;
+    min-height: calc(100vh - 56px);
+    background: #f8fafc;
+}
+
+.sidebar {
+    width: 270px;
+    background: #f3f4f6;
+    border-right: 1px solid #e5e7eb;
+    padding: 14px;
+}
+
+.side-section {
+    margin-bottom: 14px;
+}
+
+.side-title {
+    font-size: 11px;
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 8px;
+    letter-spacing: .06em;
+}
+
+.side-link {
+    display: block;
+    text-decoration: none;
+    color: #111827;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+    .side-link:hover {
+        background: #e5e7eb;
+    }
+
+.main {
+    flex: 1;
+    padding: 16px;
+}
+
+.content {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.02);
+}
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+
+/* ERP-like layout */
+.erp-topbar {
+    background: #fff;
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+
+.erp-brand {
+    text-decoration: none;
+    color: #111827;
+    font-weight: 600;
+}
+
+.erp-logo {
+    background: #ef4444;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.erp-brandText {
+    font-size: 14px;
+}
+
+.erp-modules .erp-tab {
+    text-decoration: none;
+    color: #374151;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+    .erp-modules .erp-tab:hover {
+        background: #f3f4f6;
+    }
+
+.erp-search {
+    width: 260px;
+    height: 32px;
+    font-size: 15px;
+}
+
+.erp-shell {
+    display: flex;
+    min-height: calc(100vh - 56px);
+    background: #f8fafc;
+}
+
+.erp-sidebar {
+    width: 260px;
+    background: #f3f4f6;
+    border-right: 1px solid #e5e7eb;
+    padding: 12px;
+}
+
+.erp-sideTitle {
+    font-size: 12px;
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.erp-sideGroup {
+    margin-bottom: 12px;
+}
+
+.erp-sideGroupTitle {
+    font-size: 11px;
+    color: #6b7280;
+    font-weight: 700;
+    margin: 10px 0 6px;
+    text-transform: uppercase;
+}
+
+.erp-sideItem {
+    display: block;
+    padding: 8px 10px;
+    border-radius: 8px;
+    color: #111827;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+    .erp-sideItem:hover {
+        background: #e5e7eb;
+    }
+
+.erp-main {
+    flex: 1;
+    padding: 14px;
+}
+
+.erp-content {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 14px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+
+
+
+    .topbar {
+        height: 56px;
+        background: #fff;
+    }
+
+    .brand {
+        text-decoration: none;
+        color: #111827;
+        font-weight: 700;
+    }
+
+    .brand-badge {
+        background: #2563eb;
+        color: #fff;
+        padding: 4px 10px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .brand-text {
+        font-size: 14px;
+    }
+
+    .toplink {
+        text-decoration: none;
+        color: #374151;
+        padding: 6px 10px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+        .toplink:hover {
+            background: #f3f4f6;
+        }
+
+    .topsearch {
+        width: 260px;
+    }
+
+    .shell {
+        display: flex;
+        min-height: calc(100vh - 56px);
+        background: #f8fafc;
+    }
+
+    .sidebar {
+        width: 270px;
+        background: #f3f4f6;
+        border-right: 1px solid #e5e7eb;
+        padding: 14px;
+    }
+
+    .side-section {
+        margin-bottom: 14px;
+    }
+
+    .side-title {
+        font-size: 11px;
+        font-weight: 500;
+        color: #6b7280;
+        margin-bottom: 8px;
+        letter-spacing: .06em;
+    }
+
+    .side-link {
+        display: block;
+        text-decoration: none;
+        color: #111827;
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+        .side-link:hover {
+            background: #e5e7eb;
+        }
+
+    .main {
+        flex: 1;
+        padding: 16px;
+    }
+
+    .content {
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 14px;
+        padding: 16px;
+        box-shadow: 0 1px 0 rgba(0,0,0,.02);
+    }
+
+
+    .topbar {
+        height: 56px;
+        background: #fff;
+    }
+
+    .brand {
+        text-decoration: none;
+        color: #111827;
+        font-weight: 700;
+    }
+
+    .brand-badge {
+        background: #2563eb;
+        color: #fff;
+        padding: 4px 10px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .brand-text {
+        font-size: 14px;
+    }
+
+    .toplink {
+        text-decoration: none;
+        color: #374151;
+        padding: 6px 10px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+        .toplink:hover {
+            background: #f3f4f6;
+        }
+
+    .topsearch {
+        width: 260px;
+    }
+
+    .shell {
+        display: flex;
+        min-height: calc(100vh - 56px);
+        background: #f8fafc;
+    }
+
+    .sidebar {
+        width: 270px;
+        background: #f3f4f6;
+        border-right: 1px solid #e5e7eb;
+        padding: 14px;
+    }
+
+    .side-section {
+        margin-bottom: 14px;
+    }
+
+    .side-title {
+        font-size: 20px;
+        font-weight: 500;
+        color: #6b7280;
+        margin-bottom: 8px;
+        letter-spacing: .06em;
+    }
+
+    .side-link {
+        display: block;
+        text-decoration: none;
+        color: #111827;
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+        .side-link:hover {
+            background: #e5e7eb;
+        }
+
+    .main {
+        flex: 1;
+        padding: 16px;
+    }
+
+    .content {
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 14px;
+        padding: 16px;
+        box-shadow: 0 1px 0 rgba(0,0,0,.02);
+    }
+}
+
+
+.kpi {
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 14px;
+    background: #fff;
+}
+
+.kpi-title {
+    font-size: 12px;
+    color: #6b7280;
+    font-weight: 700;
+}
+
+.kpi-value {
+    font-size: 28px;
+    font-weight: 900;
+    color: #111827;
+    margin: 6px 0;
+}
+
+.kpi-sub {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.cardx {
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 14px;
+    background: #fff;
+}
+
+.cardx-header {
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+
+/* Tabs */
+.erp-tabs {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 8px;
+}
+
+.erp-tab {
+    text-decoration: none;
+    color: #6b7280;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 6px 2px;
+}
+
+    .erp-tab.active {
+        color: #2563eb;
+    }
+
+/* Filter row */
+table.gridtable thead tr.filter-row th {
+    background: #fff;
+    padding: 8px 10px;
+    border-bottom: 1px solid #eef2f7;
+}
+
+table.gridtable thead tr.filter-row input,
+table.gridtable thead tr.filter-row select {
+    height: 28px;
+    font-size: 12px;
+}
+
+
+/* Header polish */
+.topbar {
+    !important;
+    height: 56px;
+    background: repeating-conic-gradient();
+}
+
+.brand {
+    !important;
+    text-decoration: none;
+    color: #111827;
+    font-size: 20px; /* chữ to hơn */
+    font-weight: 500; /* đúng yêu cầu */
+    letter-spacing: .2px;
+    line-height: 1;
+    padding: 6px 0;
+}
+
+.toplink {
+    !important;
+    text-decoration: none;
+    color: #374151;
+    padding: 6px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+    .toplink:hover {
+        !important;
+        background: #f3f4f6;
+    }
+
+.topsearch {
+    !important;
+    width: 280px; /* gọn hơn */
+    height: 32px;
+    font-size: 15px;
+}
+
+
+/* Brand 2 dòng */
+.brand--stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    min-width: 110px; /* tránh bị ép sát */
+    margin-right: 140px;
+}
+
+.brand__wms {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1;
+    color: dodgerblue;
+}
+
+.brand__sys {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #6b7280;
+    padding-bottom: 4px;
+}
+
+/* Tách search khỏi brand, giữ search gọn */
+.topsearch {
+    width: 320px; /* đẹp hơn */
+    min-width: 220px;
+}
+
+/* Nếu màn hình hẹp, cho search xuống hàng mà vẫn đẹp */
+@media (max-width: 900px) {
+    .topsearch {
+        width: 220px;
+    }
+}
+
+
+
+
+/* Background chỉ trong khu vực content (khung bảng) */
+.content {
+    !important;
+    background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url("https://pub-9326b54129674317b276bfb733df202e.r2.dev/pngtree-hong-kong-cityscape-image_12990170.jpg); background-size: cover; background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local; /* không fixed trong content */
+}
+
+/* Background cho vùng main, còn content/table vẫn trắng */
+.main {
+    !important;
+    background: linear-gradient(rgba(248,250,252,0.88), rgba(248,250,252,0.88)), url("https://pub-9326b54129674317b276bfb733df202e.r2.dev/pngtree-hong-kong-cityscape-image_12990170.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 16px;
+}
+
+
+/* Background chỉ cho khu vực bảng (gridcard) */
+.gridcard {
+    !important;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 1px 0 rgba(0,0,0,.02);
+    background: linear-gradient(rgba(255,255,255,0.86), rgba(255,255,255,0.86)), url("https://pub-9326b54129674317b276bfb733df202e.r2.dev/pngtree-hong-kong-cityscape-image_12990170.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+    /* Cho bảng trong suốt để lộ background */
+    .gridcard .table, !important;
+    .gridcard .table thead, !important;
+    .gridcard .table tbody, !important;
+    .gridcard .table tr, !important;
+    .gridcard .table th, !important;
+    .gridcard .table td { 
+        background: transparent !important;
+    }
+
+        /* Header vẫn nổi nhẹ để dễ đọc */
+        .gridcard .table thead th {
+            background: rgba(248,250,252,0.82) !important;
+            backdrop-filter: blur(2px);
+        }

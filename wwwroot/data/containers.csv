@@ -1,0 +1,95 @@
+ContainerNo,Type,Size,Line,CargoStatus,InDate,CustomsStatus
+YMLU4438291,Dry,40'DC,Yang Ming,Full,2025-02-28,Tạm giữ
+SITU2291038,Reefer,40'RF,SITC,Empty,2025-03-05,Chờ xuất tàu
+WHLU9938472,Dry,20'DC,Wan Hai,Full,2025-03-12,Đã hạ bãi
+MAEU1122334,Dry,40'HC,Maersk Line,Full,2025-03-18,Đang kiểm hóa
+MSKU4455667,Dry,20'DC,Maersk Line,Empty,2025-03-25,Đã thông quan
+MSCU7788990,Dry,40'DC,MSC,Full,2025-04-02,Chờ xuất tàu
+ONEY1234567,Reefer,40'RF,ONE,Full,2025-04-10,Đang kiểm hóa
+COSU8901234,Dry,40'HC,COSCO,Full,2025-04-15,Chờ nhập bãi
+EGVU5678901,Dry,20'DC,Evergreen,Empty,2025-04-20,Đã hạ bãi
+HMMU2345678,Flat Rack,20'FR,HMM,Full,2025-04-28,Đã thông quan
+YMLU3456789,Dry,40'DC,Yang Ming,Full,2025-05-05,Tạm giữ
+SITU4567890,Reefer,40'RF,SITC,Empty,2025-05-12,Chờ xuất tàu
+WHLU5678901,Dry,20'DC,Wan Hai,Full,2025-05-20,Đã hạ bãi
+MAEU6789012,Dry,40'HC,Maersk Line,Full,2025-05-28,Đang kiểm hóa
+MSKU7890123,Dry,20'DC,Maersk Line,Empty,2025-06-02,Đã thông quan
+MSCU8901234,Dry,40'DC,MSC,Full,2025-06-08,Chờ xuất tàu
+ONEY9012345,Reefer,40'RF,ONE,Full,2025-06-15,Đang kiểm hóa
+COSU0123456,Dry,40'HC,COSCO,Full,2025-06-22,Chờ nhập bãi
+EGVU1234567,Dry,20'DC,Evergreen,Empty,2025-06-30,Đã hạ bãi
+HMMU2345678,Flat Rack,20'FR,HMM,Full,2025-07-05,Đã thông quan
+YMLU3456789,Dry,40'DC,Yang Ming,Full,2025-07-12,Tạm giữ
+SITU4567890,Reefer,40'RF,SITC,Empty,2025-07-20,Chờ xuất tàu
+WHLU5678901,Dry,20'DC,Wan Hai,Full,2025-07-28,Đã hạ bãi
+MAEU6789012,Dry,40'HC,Maersk Line,Full,2025-08-04,Đang kiểm hóa
+MSKU7890123,Dry,20'DC,Maersk Line,Empty,2025-08-11,Đã thông quan
+MSCU8901234,Dry,40'DC,MSC,Full,2025-08-18,Chờ xuất tàu
+ONEY9012345,Reefer,40'RF,ONE,Full,2025-08-25,Đang kiểm hóa
+COSU0123456,Dry,40'HC,COSCO,Full,2025-09-02,Chờ nhập bãi
+EGVU1234567,Dry,20'DC,Evergreen,Empty,2025-09-09,Đã hạ bãi
+HMMU2345678,Flat Rack,20'FR,HMM,Full,2025-09-16,Đã thông quan
+YMLU3456789,Dry,40'DC,Yang Ming,Full,2025-09-24,Tạm giữ
+SITU4567890,Reefer,40'RF,SITC,Empty,2025-10-02,Chờ xuất tàu
+WHLU5678901,Dry,20'DC,Wan Hai,Full,2025-10-10,Đã hạ bãi
+MAEU6789012,Dry,40'HC,Maersk Line,Full,2025-10-18,Đang kiểm hóa
+MSKU7890123,Dry,20'DC,Maersk Line,Empty,2025-10-25,Đã thông quan
+MSCU8901234,Dry,40'DC,MSC,Full,2025-11-02,Chờ xuất tàu
+ONEY9012345,Reefer,40'RF,ONE,Full,2025-11-10,Đang kiểm hóa
+COSU0123456,Dry,40'HC,COSCO,Full,2025-11-18,Chờ nhập bãi
+EGVU1234567,Dry,20'DC,Evergreen,Empty,2025-11-25,Đã hạ bãi
+HMMU2345678,Flat Rack,20'FR,HMM,Full,2025-12-02,Đã thông quan
+YMLU3456789,Dry,40'DC,Yang Ming,Full,2025-12-10,Tạm giữ
+SITU4567890,Reefer,40'RF,SITC,Empty,2025-12-18,Chờ xuất tàu
+WHLU5678901,Dry,20'DC,Wan Hai,Full,2025-12-25,Đã hạ bãi
+MAEU6789012,Dry,40'HC,Maersk Line,Full,2025-12-30,Đang kiểm hóa
+MAEU1284752,Dry,40'HC,Maersk Line,Full,2025-01-20,Đã thông quan
+MSCU8829103,Dry,20'DC,MSC,Empty,2025-01-25,Chờ xuất tàu
+ONEY5562194,Reefer,40'RF,ONE,Full,2025-02-12,Đang kiểm hóa
+COSU3348102,Dry,40'HC,COSCO,Full,2025-02-18,Chờ nhập bãi
+EGVU9920183,Dry,20'DC,Evergreen,Empty,2025-03-01,Đã hạ bãi
+HMMU6612345,Flat Rack,20'FR,HMM,Full,2025-03-08,Đã thông quan
+YMLU7734561,Dry,40'DC,Yang Ming,Full,2025-03-15,Tạm giữ
+SITU8845672,Reefer,40'RF,SITC,Empty,2025-04-05,Chờ xuất tàu
+WHLU1156783,Dry,20'DC,Wan Hai,Full,2025-04-12,Đã hạ bãi
+MAEU2267894,Dry,40'HC,Maersk Line,Full,2025-04-20,Đang kiểm hóa
+MSKU3378905,Dry,20'DC,Maersk Line,Empty,2025-05-02,Đã thông quan
+MSCU4489016,Dry,40'DC,MSC,Full,2025-05-15,Chờ xuất tàu
+ONEY5590127,Reefer,40'RF,ONE,Full,2025-05-22,Đang kiểm hóa
+COSU6601238,Dry,40'HC,COSCO,Full,2025-06-01,Chờ nhập bãi
+EGVU7712349,Dry,20'DC,Evergreen,Empty,2025-06-10,Đã hạ bãi
+HMMU8823450,Flat Rack,20'FR,HMM,Full,2025-06-18,Đã thông quan
+YMLU9934561,Dry,40'DC,Yang Ming,Full,2025-07-01,Tạm giữ
+SITU1145672,Reefer,40'RF,SITC,Empty,2025-07-15,Chờ xuất tàu
+WHLU2256783,Dry,20'DC,Wan Hai,Full,2025-07-22,Đã hạ bãi
+MAEU3367894,Dry,40'HC,Maersk Line,Full,2025-08-01,Đang kiểm hóa
+MSKU4478905,Dry,20'DC,Maersk Line,Empty,2025-08-10,Đã thông quan
+MSCU5589016,Dry,40'DC,MSC,Full,2025-08-20,Chờ xuất tàu
+ONEY6690127,Reefer,40'RF,ONE,Full,2025-09-05,Đang kiểm hóa
+COSU7701238,Dry,40'HC,COSCO,Full,2025-09-12,Chờ nhập bãi
+EGVU8812349,Dry,20'DC,Evergreen,Empty,2025-09-20,Đã hạ bãi
+HMMU9923450,Flat Rack,20'FR,HMM,Full,2025-10-01,Đã thông quan
+YMLU1134561,Dry,40'DC,Yang Ming,Full,2025-10-10,Tạm giữ
+SITU2245672,Reefer,40'RF,SITC,Empty,2025-10-20,Chờ xuất tàu
+WHLU3356783,Dry,20'DC,Wan Hai,Full,2025-11-01,Đã hạ bãi
+MAEU4467894,Dry,40'HC,Maersk Line,Full,2025-11-12,Đang kiểm hóa
+MSKU5578905,Dry,20'DC,Maersk Line,Empty,2025-11-20,Đã thông quan
+MSCU6689016,Dry,40'DC,MSC,Full,2025-12-01,Chờ xuất tàu
+ONEY7790127,Reefer,40'RF,ONE,Full,2025-12-10,Đang kiểm hóa
+COSU8801238,Dry,40'HC,COSCO,Full,2025-12-15,Chờ nhập bãi
+EGVU9912349,Dry,20'DC,Evergreen,Empty,2025-12-20,Đã hạ bãi
+HMMU1123450,Flat Rack,20'FR,HMM,Full,2025-01-05,Đã thông quan
+YMLU2234561,Dry,40'DC,Yang Ming,Full,2025-01-12,Tạm giữ
+SITU3345672,Reefer,40'RF,SITC,Empty,2025-02-14,Chờ xuất tàu
+WHLU4456783,Dry,20'DC,Wan Hai,Full,2025-03-20,Đã hạ bãi
+MAEU5567894,Dry,40'HC,Maersk Line,Full,2025-04-10,Đang kiểm hóa
+MSKU6678905,Dry,20'DC,Maersk Line,Empty,2025-05-15,Đã thông quan
+MSCU7789016,Dry,40'DC,MSC,Full,2025-06-20,Chờ xuất tàu
+ONEY8890127,Reefer,40'RF,ONE,Full,2025-07-25,Đang kiểm hóa
+COSU9901238,Dry,40'HC,COSCO,Full,2025-08-30,Chờ nhập bãi
+EGVU1112349,Dry,20'DC,Evergreen,Empty,2025-09-15,Đã hạ bãi
+HMMU2223450,Flat Rack,20'FR,HMM,Full,2025-10-10,Đã thông quan
+YMLU3334561,Dry,40'DC,Yang Ming,Full,2025-11-05,Tạm giữ
+SITU4445672,Reefer,40'RF,SITC,Empty,2025-12-20,Chờ xuất tàu
+WHLU5556783,Dry,20'DC,Wan Hai,Full,2025-12-31,Đã hạ bãi
+MAEU6667894,Dry,40'HC,Maersk Line,Full,2025-10-05,Đang kiểm hóa

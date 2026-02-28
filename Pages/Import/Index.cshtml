@@ -1,0 +1,21 @@
+﻿@page
+@model Wms.Web.Pages.Import.IndexModel
+@{
+    ViewData["Title"] = "Import dữ liệu";
+}
+
+<h5 class="mb-2">Import dữ liệu mẫu</h5>
+<p class="text-muted" style="font-size:13px;">
+    Import SKU và Bin từ file CSV trong <code>wwwroot/data</code> trên máy tính hoặc gọi <code>API Google Sheet</code>
+</p>
+
+<form method="post" class="d-flex gap-2">
+    <button class="btn btn-primary btn-sm" asp-page-handler="Skus">Import SKUs</button>
+    <button class="btn btn-primary btn-sm" asp-page-handler="Bins">Import Bins</button>
+    <button class="btn btn-primary btn-sm" asp-page-handler="Containers">Import Containers</button>
+</form>
+
+@if (!string.IsNullOrWhiteSpace(Model.Message))
+{
+    <div class="alert alert-info mt-3">@Model.Message</div>
+}

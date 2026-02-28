@@ -1,0 +1,65 @@
+Code,Name,Group,Unit,Cost,MinStock,MaxStock,ReorderPoint,IsActive
+SKU-0001,ESP32-S3 WROOM 1,Linh kiện điện tử,pcs,155000,10,50,15,true
+SKU-0002,Cảm biến IMU MPU6050,Linh kiện điện tử,pcs,45000,20,100,30,true
+SKU-0003,Màn hình OLED 0.96 inch,Linh kiện điện tử,pcs,65000,15,60,20,true
+SKU-0004,Cảm biến chạm YL-99,Linh kiện điện tử,pcs,12000,50,200,70,true
+SKU-0005,Pin Li-Po 3.7V 1000mAh,Linh kiện điện tử,pcs,85000,20,80,30,true
+SKU-0006,Bu lông M6,Cơ khí,pcs,1200,50,200,80,true
+SKU-0007,Thùng carton L,Đóng gói,box,7000,20,100,30,true
+SKU-0008,Lò xo thép 1.2mm,Cơ khí,pcs,5000,100,500,150,true
+SKU-0009,Vỏ nhựa mô hình TT-54,Cơ khí,set,250000,5,20,8,true
+SKU-0010,Dây cáp Jumper đực-cái,Linh kiện điện tử,pack,15000,30,150,50,true
+SKU-0011,Nút nhấn 6x6x5mm,Linh kiện điện tử,pcs,500,200,1000,300,true
+SKU-0012,Led đỏ 5mm siêu sáng,Linh kiện điện tử,pcs,300,500,2000,700,true
+SKU-0013,Trở kháng 220 Ohm,Linh kiện điện tử,pcs,100,1000,5000,1500,true
+SKU-0014,Mạch nạp CP2102,Linh kiện điện tử,pcs,55000,10,40,15,true
+SKU-0015,Keo nến 7mm,Đóng gói,pcs,2000,100,400,150,true
+SKU-0016,Băng keo trong 5cm,Đóng gói,roll,12000,20,80,35,true
+SKU-0017,Giấy bọc quà handmade,Đóng gói,sheet,5000,100,500,200,true
+SKU-0018,Mũ bảo hộ kỹ sư,Bảo hộ lao động,pcs,120000,10,50,15,true
+SKU-0019,Găng tay sợi chống cắt,Bảo hộ lao động,pair,25000,50,200,80,true
+SKU-0020,Dầu nhớt máy cẩu,Vật tư cảng,liter,180000,50,300,100,true
+SKU-0021,Mạch chuyển mức I2C,Linh kiện điện tử,pcs,15000,30,100,40,true
+SKU-0022,Tụ điện 10uF 16V,Linh kiện điện tử,pcs,500,200,1000,300,true
+SKU-0023,Đế pin AA 2 cell,Linh kiện điện tử,pcs,8000,40,150,60,true
+SKU-0024,Vít máy M3x10,Cơ khí,pcs,500,1000,5000,1500,true
+SKU-0025,Đai ốc M3,Cơ khí,pcs,300,1000,5000,1500,true
+SKU-0026,Long đền phẳng M3,Cơ khí,pcs,200,1000,5000,1500,true
+SKU-0027,Mica trong 2mm A4,Cơ khí,sheet,35000,20,100,40,true
+SKU-0028,Ống co nhiệt 3mm,Linh kiện điện tử,meter,3000,50,200,80,true
+SKU-0029,Mỏ hàn chì 60W,Linh kiện điện tử,pcs,120000,5,20,8,true
+SKU-0030,Thiếc hàn 0.8mm,Linh kiện điện tử,roll,150000,5,25,10,true
+SKU-0031,Hộp nhựa kỹ thuật 100x60,Linh kiện điện tử,pcs,25000,20,80,30,true
+SKU-0032,Module sạc pin TP4056,Linh kiện điện tử,pcs,8000,50,200,70,true
+SKU-0033,Cảm biến siêu âm SR04,Linh kiện điện tử,pcs,28000,15,60,25,true
+SKU-0034,Servo SG90,Linh kiện điện tử,pcs,35000,20,80,35,true
+SKU-0035,Bánh xe robot 65mm,Linh kiện điện tử,pcs,22000,30,120,50,true
+SKU-0036,Khung xe robot 3 bánh,Linh kiện điện tử,set,120000,5,20,8,true
+SKU-0037,Dây rút nhựa 15cm,Đóng gói,pack,15000,50,200,80,true
+SKU-0038,Màng xốp hơi chống sốc,Đóng gói,roll,150000,2,10,4,true
+SKU-0039,Bút dạ đánh dấu,Văn phòng phẩm,pcs,12000,20,100,40,true
+SKU-0040,Giấy in nhiệt A6,Đóng gói,roll,85000,10,50,20,true
+SKU-0041,Áo phản quang,Bảo hộ lao động,pcs,45000,30,150,60,true
+SKU-0042,Kính bảo hộ,Bảo hộ lao động,pcs,35000,20,100,40,true
+SKU-0043,Giày bảo hộ mũi thép,Bảo hộ lao động,pair,350000,5,30,10,true
+SKU-0044,Dây cáp thép phi 8,Vật tư cảng,meter,25000,100,500,150,true
+SKU-0045,Mỡ bò bôi trơn,Vật tư cảng,kg,95000,10,50,20,true
+SKU-0046,Sơn xịt màu đen,Cơ khí,can,35000,20,80,35,true
+SKU-0047,Giấy nhám P400,Cơ khí,sheet,5000,50,200,80,true
+SKU-0048,Keo 502 loại lớn,Cơ khí,bottle,15000,20,100,40,true
+SKU-0049,Pin vuông 9V,Linh kiện điện tử,pcs,25000,20,80,35,true
+SKU-0050,Đế nạp Arduino Nano,Linh kiện điện tử,pcs,35000,10,40,15,true
+SKU-0051,Cảm biến gas MQ2,Linh kiện điện tử,pcs,38000,10,50,20,true
+SKU-0052,Loa 8 Ohm 0.5W,Linh kiện điện tử,pcs,15000,30,120,50,true
+SKU-0053,Biến trở 10K,Linh kiện điện tử,pcs,5000,50,200,80,true
+SKU-0054,Relay 5V 1 kênh,Linh kiện điện tử,pcs,18000,25,100,40,true
+SKU-0055,Mạch hạ áp LM2596,Linh kiện điện tử,pcs,25000,15,60,25,true
+SKU-0056,Cọc đồng 10mm,Cơ khí,pcs,2000,100,500,150,true
+SKU-0057,Vít gỗ 4x30,Cơ khí,pcs,400,500,2000,700,true
+SKU-0058,Bản lề lá nhỏ,Cơ khí,pair,8000,30,120,50,true
+SKU-0059,Dây điện đơn 0.5mm,Linh kiện điện tử,meter,4000,100,500,200,true
+SKU-0060,Dây cáp micro USB,Linh kiện điện tử,pcs,25000,20,100,40,true
+SKU-0061,Header đơn 40 chân,Linh kiện điện tử,pcs,3000,50,200,80,true
+SKU-0062,Testboard MB-102,Linh kiện điện tử,pcs,35000,10,40,15,true
+SKU-0063,Cảm biến mưa,Linh kiện điện tử,pcs,22000,15,60,25,true
+SKU-0064,Cảm biến ánh sáng LDR,Linh kiện điện tử,pcs,2000,100,500,

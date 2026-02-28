@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Wms.Web</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Wms.Web.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="topbar border-bottom">
+        <div class="container-fluid d-flex align-items-center flex-wrap gap-4">
+            <a class="brand brand--stack" asp-page="/Index" aria-label="WMS System">
+                <span class="brand__wms">WMS</span>
+                <span class="brand__sys">System</span>
+            </a>
+            <nav class="d-none d-md-flex gap-2">
+                <a class="toplink" asp-page="/Index">Tổng quan</a>
+                <a class="toplink" asp-page="/Skus/Index">Thiết lập</a>
+                <a class="toplink" asp-page="/Inbound/Receive">Nhập kho</a>
+                <a class="toplink" asp-page="/Outbound/Issue">Xuất kho</a>
+                <a class="toplink" asp-page="/Inventory/OnHand">Tồn kho</a>
+                <a class="toplink" asp-page="/Reports/Index">Báo cáo</a>
+            </nav>
+
+            <div class="ms-auto d-flex align-items-center gap-2">
+                <input class="form-control form-control-sm topsearch" placeholder="Search (F3)..." />
+                <button class="btn btn-outline-secondary btn-sm">Help</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="shell">
+        <aside class="sidebar">
+            <div class="side-section">
+                <div class="side-title">THIẾT LẬP DANH MỤC</div>
+                <a class="side-link" asp-page="/Skus/Index">• Mặt hàng (SKU)</a>
+                <a class="side-link" asp-page="/Bins/Index">• Vị trí (Bin/Location)</a>
+                <a class="side-link" asp-page="/Containers/Index">• Container</a>
+                <a class="side-link" asp-page="/Warehouses/Index">• Kho</a>
+                <a class="side-link" asp-page="/Partners/Suppliers">• Nhà cung cấp</a>
+                <a class="side-link" asp-page="/Partners/Customers">• Khách hàng</a>
+            </div>
+
+            <div class="side-section">
+                <div class="side-title">NHẬP KHO</div>
+                <a class="side-link" asp-page="/Inbound/Receive">• Nhập hàng (Receive)</a>
+                <a class="side-link" asp-page="/Inbound/Putaway">• Putaway (Đưa vào vị trí)</a>
+                <a class="side-link" asp-page="/Inbound/Receipts">• Danh sách phiếu nhập</a>
+            </div>
+
+            <div class="side-section">
+                <div class="side-title">XUẤT KHO</div>
+                <a class="side-link" asp-page="/Outbound/Pick">• Picking (Soạn hàng)</a>
+                <a class="side-link" asp-page="/Outbound/Pack">• Packing (Đóng gói)</a>
+                <a class="side-link" asp-page="/Outbound/Ship">• Shipping (Xuất hàng)</a>
+                <a class="side-link" asp-page="/Outbound/Orders">• Danh sách đơn xuất</a>
+            </div>
+
+            <div class="side-section">
+                <div class="side-title">TỒN KHO</div>
+                <a class="side-link" asp-page="/Inventory/OnHand">• Tồn hiện tại</a>
+                <a class="side-link" asp-page="/Inventory/Movements">• Sổ phát sinh</a>
+                <a class="side-link" asp-page="/Inventory/CycleCount">• Kiểm kê (Cycle count)</a>
+                <a class="side-link" asp-page="/Inventory/Adjustments">• Điều chỉnh tồn</a>
+            </div>
+
+            <div class="side-section">
+                <div class="side-title">DỮ LIỆU</div>
+                <a class="side-link" asp-page="/Import/Index">• Import dữ liệu</a>
+                <a class="side-link" asp-page="/Export/Index">• Export dữ liệu</a>
+            </div>
+        </aside>
+
+        <main class="main">
+            <div class="content">
+                @RenderBody()
+            </div>
+        </main>
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.8/js/dataTables.bootstrap5.min.js"></script>
+</body>
+</html>

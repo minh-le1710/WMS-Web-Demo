@@ -1,0 +1,58 @@
+﻿@page
+@model Wms.Web.Pages.Skus.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+    
+}
+
+<h1>Edit</h1>
+
+<h4>Sku</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Sku.Id" />
+            <div class="form-group">
+<span class="text-danger">*</span>
+                <label asp-for="Sku.Code" class="control-label"></label>
+                <input asp-for="Sku.Code" class="form-control" aria-required="true"/>
+                <span asp-validation-for="Sku.Code" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+<span class="text-danger">*</span>
+                <label asp-for="Sku.Name" class="control-label"></label>
+                <input asp-for="Sku.Name" class="form-control" aria-required="true"/>
+                <span asp-validation-for="Sku.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sku.Unit" class="control-label"></label>
+                <input asp-for="Sku.Unit" class="form-control" />
+                <span asp-validation-for="Sku.Unit" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Sku.IsActive" /> @Html.DisplayNameFor(model => model.Sku.IsActive)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sku.CreatedAt" class="control-label"></label>
+                <input asp-for="Sku.CreatedAt" class="form-control" />
+                <span asp-validation-for="Sku.CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

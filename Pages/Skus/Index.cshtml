@@ -1,0 +1,154 @@
+﻿@page
+@model Wms.Web.Pages.Skus.IndexModel
+@{
+    ViewData["Title"] = "Mặt hàng";
+    var total = Model.Sku?.Count ?? 0;
+}
+
+<!-- Tabs -->
+<div class="erp-tabs mb-2">
+    <a class="erp-tab active" href="#">Số Container (@total)</a>
+    <a class="erp-tab" asp-page="/Skus/Settings">Loại</a>
+    <a class="erp-tab" asp-page="/Skus/Lots">Kích thước</a>
+    <a class="erp-tab" asp-page="/Outbound/Ship">Hãng tàu (Line)</a>
+    <a class="erp-tab" asp-page="/Inventory/OnHand">Trạng thái hàng</a>
+    <a class="erp-tab" asp-page="/Inventory/Movements">Ngày vào</a>
+    <a class="erp-tab" asp-page="/Reports/Index">Tình trạng thủ tục</a>
+</div>
+
+<!-- Header + toolbar -->
+<div class="d-flex align-items-center justify-content-between mb-2">
+    <div class="d-flex align-items-center gap-2">
+        <h5 class="mb-0">Mặt hàng</h5>
+        <a class="btn btn-primary btn-sm" asp-page="Create">
+            <span class="me-1" style="font-weight:900;">+</span> Tạo mới
+        </a>
+    </div>
+
+    <div class="d-flex gap-2">
+        <button class="btn btn-outline-secondary btn-sm">PDF</button>
+        <button class="btn btn-outline-secondary btn-sm">CSV</button>
+        <a class="btn btn-outline-primary btn-sm" asp-page="/Import/Index">Import CSV (Google Sheet)</a>
+    </div>
+</div>
+
+<div class="gridcard">
+    <div class="table-responsive">
+        <table id="tblSkus" class="table table-sm table-hover align-middle gridtable">
+            <thead>
+                <tr>
+                    <th style="width:52px;">#</th>
+                    <th style="width:130px;">Mã hàng</th>
+                    <th>Mô tả</th>
+                    <th style="width:110px;">Nhóm</th>
+                    <th style="width:110px;">ĐVT</th>
+                    <th style="width:110px;" class="text-end">Giá vốn</th>
+                    <th style="width:130px;" class="text-end">Tồn min</th>
+                    <th style="width:130px;" class="text-end">Tồn max</th>
+                    <th style="width:140px;" class="text-end">Điểm đặt lại</th>
+                    <th style="width:170px;">Trạng thái</th>
+                    <th class="text-end" style="width:170px;">Thao tác</th>
+                </tr>
+
+                <!-- Filter row giống ảnh (min/max) -->
+                <tr class="filter-row">
+                    <th></th>
+                    <th><input class="form-control form-control-sm" placeholder="Tìm mã..." data-col="1" /></th>
+                    <th><input class="form-control form-control-sm" placeholder="Tìm mô tả..." data-col="2" /></th>
+                    <th><input class="form-control form-control-sm" placeholder="Nhóm..." data-col="3" /></th>
+                    <th><input class="form-control form-control-sm" placeholder="ĐVT..." data-col="4" /></th>
+                    <th><input class="form-control form-control-sm" placeholder="min..." data-col="5" /></th>
+                    <th><input class="form-control form-control-sm" placeholder="min..." data-col="6" /></th>
+                    <th><input class="form-control form-control-sm" placeholder="max..." data-col="7" /></th>
+                    <th><input class="form-control form-control-sm" placeholder="min..." data-col="8" /></th>
+                    <th>
+                        <select class="form-select form-select-sm" data-col="9">
+                            <option value="">Tất cả</option>
+                            <option value="ON">ON</option>
+                            <option value="OFF">OFF</option>
+                        </select>
+                    </th>
+                    <th class="text-end">
+                        <button type="button" class="btn btn-link btn-sm p-0 me-2" id="btnSearch">Search</button>
+                        <button type="button" class="btn btn-link btn-sm p-0" id="btnClear">Clear</button>
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @{
+                    var idx = 0;
+                }
+                @foreach (var item in Model.Sku)
+                {
+                    idx++;
+                    <tr>
+                        <td class="text-muted">@idx</td>
+                        <td class="fw-semibold">@item.Code</td>
+                        <td>@item.Name</td>
+                        <td>@item.Group</td>
+                        <td>@item.Unit</td>
+                        <td class="text-end">@item.Cost.ToString("N0")</td>
+                        <td class="text-end">@item.MinStock</td>
+                        <td class="text-end">@item.MaxStock</td>
+                        <td class="text-end">@item.ReorderPoint</td>
+                        <td>
+                            @if (item.IsActive)
+                            {
+                                <span class="badge text-bg-success">ON</span>
+                            }
+                            else
+                            {
+
+                                <span class="badge text-bg-secondary">OFF</span>
+                            }
+                        </td>
+                        <td class="text-end">
+                            <a class="btn btn-outline-secondary btn-sm" asp-page="./Edit" asp-route-id="@item.Id">Sửa</a>
+                            <a class="btn btn-outline-secondary btn-sm" asp-page="./Details" asp-route-id="@item.Id">Xem</a>
+                            <a class="btn btn-outline-danger btn-sm" asp-page="./Delete" asp-route-id="@item.Id">Xóa</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(function () {
+          const dt = $('#tblSkus').DataTable({
+            pageLength: 25,
+            orderCellsTop: true,
+            order: [[1,'asc']],
+            dom: "rt<'d-flex align-items-center justify-content-between mt-2'<'small text-muted'i><'d-flex gap-2'lp>>",
+            language: {
+              lengthMenu: "Hiện _MENU_",
+              info: "Hiển thị _START_–_END_ / _TOTAL_",
+              paginate: { next: "›", previous: "‹" },
+              zeroRecords: "Không có dữ liệu phù hợp",
+              infoEmpty: "Không có dữ liệu"
+            }
+          });
+
+          // Filter by column inputs
+          $('.filter-row input').on('keyup change', function () {
+            const col = $(this).data('col');
+            dt.column(col).search(this.value).draw();
+          });
+          $('.filter-row select').on('change', function () {
+            const col = $(this).data('col');
+            dt.column(col).search(this.value).draw();
+          });
+
+          $('#btnSearch').on('click', function(){ dt.draw(); });
+          $('#btnClear').on('click', function(){
+            $('.filter-row input').val('');
+            $('.filter-row select').val('');
+            dt.columns().search('');
+            dt.draw();
+          });
+        });
+    </script>
+}

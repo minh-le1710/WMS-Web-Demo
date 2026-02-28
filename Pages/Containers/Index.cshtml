@@ -1,0 +1,52 @@
+﻿@page
+@model Wms.Web.Pages.Containers.IndexModel
+@{
+    ViewData["Title"] = "Danh sách Container";
+}
+
+<h5 class="mb-2">Danh sách Container</h5>
+
+<div class="gridcard">
+    <div class="table-responsive">
+        <table id="tblContainers" class="table table-sm table-hover align-middle gridtable">
+            <thead class="table-light">
+                <tr>
+                    <th>Số Container</th>
+                    <th>Loại</th>
+                    <th>Kích thước</th>
+                    <th>Hãng tàu (Line)</th>
+                    <th>Trạng thái hàng</th>
+                    <th>Ngày vào</th>
+                    <th>Tình trạng thủ tục</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var c in Model.ContainerRecord)
+                {
+                    <tr>
+                        <td class="fw-semibold">@c.ContainerNo</td>
+                        <td>@c.Type</td>
+                        <td>@c.Size</td>
+                        <td>@c.Line</td>
+                        <td>@c.CargoStatus</td>
+                        <td>@c.InDate.ToString("dd/MM/yyyy")</td>
+                        <td>@c.CustomsStatus</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(function () {
+          if ($.fn && $.fn.dataTable) {
+            $('#tblContainers').DataTable({
+              pageLength: 25,
+              order: [[5, 'desc']]
+            });
+          }
+        });
+    </script>
+}
